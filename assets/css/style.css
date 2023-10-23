@@ -9,7 +9,7 @@
     --color-base2: #022a30;
     --color-brand: #e0f780;
     --color-brand2: #deff58;
-    --sidbar-width: 240px;
+    --sidbar-width: 220px;
     --font-base: "Roboto Condensed";
 
 
@@ -20,3 +20,254 @@ body{
     color: var(--color-body);
     font-family: var(--font-base), sans serif;
 }
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--color-heading);
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    color: var(--color-brand);
+}
+
+img{
+    width:100%;
+}
+
+.shadow-effect{
+transition: all 0.5s;
+}
+
+.iconbox{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+    border-radius: 50%;
+}
+
+.shadow-effect:hover{
+    box-shadow: -5px 5px 0 0px var(--color-brand);
+}
+
+.bg-base{
+    background-color: var(--color-base);
+
+}
+
+.text-brand{
+color: var(--color-brand);
+
+}
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border-bottom: 2px solid rgba(white, white, white, 0.1);
+}
+
+.navbar{
+background-color: var(--color-base);
+
+}
+
+
+.navbar .nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.navbar .nav-link.active{
+    color: var(--color-brand);
+}
+
+.navbar .nav-link:hover{
+color:var(--color-brand);
+}
+
+@media(min-width: 992px){
+    .navbar{
+        min-height:100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgb(3, 63, 71,0.8),rgb(3, 63, 71,0.9));
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img{
+        border-radius: 50%;
+
+    }
+    /* Content*/
+    #content-wrapper{
+        padding-left: var(--sidbar-width);
+    }
+}
+
+#Robin{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-image: radial-gradient(circle at 100% 50%, transparent 50%, white 51%);
+
+}
+
+
+/* BTN*/
+.btn{
+    padding:12px 28px;
+    font-weight: 700;
+
+}
+
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+}
+
+.btn-brand:hover,
+.btn-brand:focus{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
+}
+
+.link-custom{
+    font-weight: 700;
+    position: relative;
+
+}
+
+.link-custom::after{
+    content: "";
+    width:0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top:110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after{
+    width: 100%;
+}
+
+/* Add your CSS styles here */
+
+.flip-container {
+    perspective: 1000px;
+    width: 300px; /* Adjust width and height as needed */
+    height: 300px;
+}
+
+.flipper {
+    width: 300px; /* Adjust width and height as needed */
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.front, .back {
+    width: 300px; /* Adjust width and height as needed */
+    height: 300px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+   
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: rgb(0,89,129); /* Background color for the back content */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8%;
+}
+
+.expdeveloper{
+    text-align: start;
+}
+.flip-container.flipped .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container.flipped .front {
+    display: none;
+}
+
+.flip-container.flipped .back {
+    display: block;
+}
+
+
+
+
+.expanded-size {
+    width: 250px;
+    height: 250px;
+    
+    font-size: 20px;
+}
+
+#ODimage
+{
+    border-top-left-radius: 10%; /* Adjust the radius as needed */
+    border-top-right-radius: 10%;
+}
+
+.card-custom .card-custom-image{
+    overflow: hidden;
+
+}
+
+.card-custom .card-custom-image img{
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img{
+    transform: scale(1.1);
+}
+
+#BCimage {
+    height: 175px;
+    width:400px
+}
+
+#WBimage {
+    height: 200px;
+    width:400px;
+    border-radius: 10%; /* Adjust the radius as needed */
+   
+    }
+
+#pwebsitee{
+    height:445px;
+    
+}
+
