@@ -271,3 +271,15 @@ color:var(--color-brand);
     
 }
 
+.hover-textSelenium  {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.hover-element:hover .hover-textSelenium{
+    display: block;
+}
