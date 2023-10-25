@@ -287,3 +287,24 @@ color:var(--color-brand);
 .hover-element:hover .hover-text {
     display: block;
 }
+
+#contacts .form-control{
+    border-color: var(--color-base);
+}
+
+#contacts .form-control:focus{
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contacts input.form-control{
+    height: 44px;
+}
+
+.social-links{
+    text-align: center;
+}
+
+.social-links a{
+    margin: 0 10px;
+}
