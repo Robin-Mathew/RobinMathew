@@ -308,3 +308,10 @@ color:var(--color-brand);
 .social-links a{
     margin: 0 10px;
 }
+
+.calendly-inline-widget{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+}
