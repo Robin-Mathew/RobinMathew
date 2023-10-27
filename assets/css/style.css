@@ -210,7 +210,16 @@ color:var(--color-brand);
     border-radius: 8%;
 }
 
+.exprole{
+    text-align: start;
+}
 .expdeveloper{
+    text-align: start;
+}
+.expLead{
+    text-align: start;
+}
+.expAwards{
     text-align: start;
 }
 .flip-container.flipped .flipper {
@@ -297,9 +306,25 @@ color:var(--color-brand);
     box-shadow: none;
 }
 
+.website-image{
+    overflow: hidden;
+}
+
 #contacts input.form-control{
     height: 44px;
 }
+
+.equal-sized-div {
+    width: 25%; /* Set the width to 25% to make all divs equal in width */
+    padding-top: 25%; /* Set the padding-top to 25% to maintain a square shape (height = width) */
+   /* Add your desired background color */
+    text-align: center;
+    font-size: 18px;
+    margin: 10px; /* Add margin to create spacing between the divs */
+    display: inline-block; /* Make divs appear in a row */
+    box-sizing: border-box; /* Include padding in the total width/height */
+}
+
 
 .social-links{
     text-align: center;
@@ -314,4 +339,137 @@ color:var(--color-brand);
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust as needed */
+}
+
+/* Styles for the modal (popup) */
+
+/* Styles for the modal (popup) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80%; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.modal3 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 80%; /* Adjust the maximum height as needed */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: var(--color-base2);
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+}
+
+.modal-content2 {
+    background-color: var(--color-base2);
+    margin:  auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+}
+
+.modal-content3 {
+    background-color: var(--color-base2);
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.close2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.close3 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* ... rest of your modal styles ... */
+
+/* Style for the word that triggers the popup */
+.popup-trigger {
+    cursor: pointer;
+    color: -var(--color-heading);
+    text-decoration: underline;
+}
+
+.popup-trigger2 {
+    cursor: pointer;
+    color: -var(--color-heading);
+    text-decoration: underline;
+}
+
+.popup-trigger3 {
+    cursor: pointer;
+    color: -var(--color-heading);
+    text-decoration: underline;
+}
+
+/* Styles for the button (you can customize this) */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    text-align: left;
+}
+li{
+    text-align: left;
 }
